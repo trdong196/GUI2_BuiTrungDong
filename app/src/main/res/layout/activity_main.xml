@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvF"
+        android:textSize="@dimen/textsize"
+        android:text="Fahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:labelFor="@+id/tvF"
+        android:id="@+id/txtF"
+        android:textSize="@dimen/textsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvC"
+        android:textSize="@dimen/textsize"
+        android:text="Celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:labelFor="@+id/tvC"
+        android:id="@+id/txtC"
+        android:textSize="@dimen/textsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_ctc"
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert To Celsius"
+            android:textSize="@dimen/textsize"
+            app:cornerRadius="0dp" />
+        <Button
+            android:id="@+id/btn_ctf"
+            app:cornerRadius="0dp"
+            android:text="Convert To Fahrenheit"
+            android:textSize="@dimen/textsize"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/clear"
+        android:textSize="@dimen/textsize"
+        android:text="Clear"
+        app:cornerRadius="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
